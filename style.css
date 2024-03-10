@@ -1,4 +1,106 @@
+:root {
+  --bg-color: #103140;
+  --main-color: #FCDA3D;
+  --seco-color: #2DAD90;
+  --tert-color: #C4D5DE;
+  --quart-color: #FFFFFF;
+}
+
 html {
   height: 100%;
   width: 100%;
+  background-color: var(--bg-color);
+  color: white;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lexend", sans-serif;
+  position: relative; 
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introcard {
+  width: 823px;
+  height: 375px;
+  top: 146px;
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+}
+
+.highlight {
+  width: 327px;
+  height: 63px;
+  top: 333px;
+  position: absolute;
+  opacity: 0.5;
+  background: #fcda3d;
+}
+
+.highlight-text {
+  top: 270px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.choosefile, .upload-pdf {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.choosefile {
+  color:black;
+}
+.upload-pdf {
+  color:white;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type=file] {
+  border: none;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: var(--tert-color);
+  border-radius: 50px;
+}
+
+input[type=submit] {
+  border: none;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #2dad90;
+  border-radius: 50px;
+
+}
+
+table, th, td {
+  border: 1px solid  grey;
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  text-align:center
+}
+
+table {
+  width: 50%;
+}
+

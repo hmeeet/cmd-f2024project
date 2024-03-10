@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>cmd-f project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1>PDF View</h1>
+
+
+  <section>
+    <div class="container">
+      <div class="wrapper">
+        <div class="left">
+          <h1>Upload PDF</h1>
+          <form id="upload-form">
+            <input type="file" id="pdf-input" accept=".pdf" />
+            <button class="upload-pdf" type="submit">Upload</button>
+          </form>
+        </div>
+        <div class="right">
+          <h1>PDF Preview</h1>
+          <div id="pdf-container">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <link  href="/path/to/cropper.css" rel="stylesheet">
+    <script src="/path/t3o/cropper.js"></script>
+    <script src="/path/to/pdf.js"></script>
+    <script src="/path/to/pdf.worker.js"></script>
+    <script src="pdfToImageConverter.js"></script>
+
+  </section>
+</body>
+
+</html>
