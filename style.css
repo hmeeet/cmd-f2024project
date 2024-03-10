@@ -27,7 +27,7 @@ body {
   align-items: center;
 }
 
-.introcard {
+.introcard, .card {
   width: 823px;
   height: 375px;
   top: 146px;
@@ -68,9 +68,20 @@ body {
   color:white;
 }
 
+.upload {
+  margin-top: 550px;
+}
+
 .upload-form {
   display: flex;
   flex-direction: row;
+}
+
+.backgroundViewPDF {
+  width: 1280px; 
+  height: 832px; 
+  position: relative; 
+  background: #103140
 }
 
 input[type=file] {
@@ -103,4 +114,5 @@ table, th, td {
 table {
   width: 50%;
 }
+
 

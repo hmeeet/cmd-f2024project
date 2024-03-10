@@ -1,0 +1,7 @@
+{
+  "type":"module",
+  "dependencies": {
+    "cropperjs": "^1.6.1",
+    "mongodb": "^6.4.0"
+  },
+}

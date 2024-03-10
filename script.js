@@ -1,13 +1,40 @@
+
 import "./style.css";
+
 import Cropper from "cropperjs";
 var currpage = 0; //CHANGE THIS depending on which page we're on
 
-
-
 var j = 0;
+
+var script = document.createElement('script');
+
+// Set the src attribute to the Cropper.js CDN URL
+script.src = 'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js';
+
+// Define a callback function to be executed after the script is loaded
+script.onload = function() {
+    // The Cropper.js library is now loaded, so you can initialize Cropper.js here
+    var image = document.getElementById('image');
+    var cropper = new Cropper(image, {
+        aspectRatio: 16 / 9, // Set aspect ratio as per your requirement
+        crop: function(event) {
+            console.log(event.detail.x);
+            console.log(event.detail.y);
+            console.log(event.detail.width);
+            console.log(event.detail.height);
+            console.log(event.detail.rotate);
+            console.log(event.detail.scaleX);
+            console.log(event.detail.scaleY);
+        }
+    });
+};
+
+// Append the <script> element to the <head> or <body> of your HTML document
+document.head.appendChild(script);
 
 const image = document.getElementById("image");
 const result = document.getElementById("result");
+
 const cropper = new Cropper(image, {
 
     crop: function (event) {
@@ -125,6 +152,7 @@ function createTable() {
     tableSpace.appendChild(table);
   }
 }
+
 
 
 

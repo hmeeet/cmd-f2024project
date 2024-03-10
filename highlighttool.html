@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>cmd-f project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<!--
+<body>
+  <h1>PDF View</h1>
+
+<!-- 
+  <section>
+    <div class="container">
+      <div class="wrapper">
+        <div class="left">
+          <h1>Upload PDF</h1>
+          <form id="upload-form">
+            <input type="file" id="pdf-input" accept=".pdf" />
+            <button class="upload-pdf" type="submit">Upload</button>
+          </form>
+        </div>
+        <div class="right">
+          <h1>PDF Preview</h1>
+          <div id="pdf-container">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="script.js"></script>
+    <link  href="/path/to/cropper.css" rel="stylesheet">
+    <script src="/path/t3o/cropper.js"></script>
+    <script src="/path/to/pdf.js"></script>
+    <script src="/path/to/pdf.worker.js"></script>
+    <script src="pdfToImageConverter.js"></script> -->
+
+  <!--
+  </section> -->
+
+  <section>
+
+    <!-- this is a spacer VV -->
+    <div style="width: 167px; height: 10px; background: #103140"></div> 
+
+    <!-- this is the GENERATE CARDS button VV -->
+           <button style="text-align: center; color: white; font-size: 25px; font-family: Inter; font-weight: 500; word-wrap: break-word; width: 244.42px; height: 59px; background: #2DAD90; border-radius: 50px; position: relative; left: 1260px;">Generate Cards</button>
+
+          <!-- this is ONE OF those grey divs -->
+          <a href="tabletool.html">
+           <button style="width: 199px; height: 100px; background: #C4D5DE; border-radius: 50px; position: relative; left: -70px; display: flex; justify-content: center; align-items: center;">
+              <!-- CHART TOOL VV -->
+                <div class="Rectangle18" style="width: 50px; height: 39px; background: #C4D5DE"></div>
+               <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                 <path fill="#2dad90" d="M64 256V160H224v96H64zm0 64H224v96H64V320zm224 96V320H448v96H288zM448 256H288V160H448v96zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
+               </button>
+            </a>
+
+
+    <!-- this is a spacer VV -->
+    <div style="width: 167px; height: 20px; background: #103140"></div> 
+
+       <!-- this is THE SECOND OF those grey divs -->
+        
+          <button style="width: 300px; height: 100px; background: #C4D5DE; border-radius: 50px; position: relative; left: -100px; display: flex; justify-content: center; align-items: center;">
+
+            <!-- HIGHLIGHT TOOL VV -->
+
+           <div class="Rectangle18" style="width: 167px; height: 39px; background: #C4D5DE"></div>
+<svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path fill="#FFD43B" d="M315 315l158.4-215L444.1 70.6 229 229 315 315zm-187 5l0 0V248.3c0-15.3 7.2-29.6 19.5-38.6L420.6 8.4C428 2.9 437 0 446.2 0c11.4 0 22.4 4.5 30.5 12.6l54.8 54.8c8.1 8.1 12.6 19 12.6 30.5c0 9.2-2.9 18.2-8.4 25.6L334.4 396.5c-9 12.3-23.4 19.5-38.6 19.5H224l-25.4 25.4c-12.5 12.5-32.8 12.5-45.3 0l-50.7-50.7c-12.5-12.5-12.5-32.8 0-45.3L128 320zM7 466.3l63-63 70.6 70.6-31 31c-4.5 4.5-10.6 7-17 7H24c-13.3 0-24-10.7-24-24v-4.7c0-6.4 2.5-12.5 7-17z"/></svg>
+        </button>
+
+    <!-- this is a spacer VV -->
+    <div style="width: 167px; height: 20px; background: #103140"></div>
+
+       <!-- this is THE THIRD OF those grey divs -->
+    <a href="viewpdf.html">
+        <button style="width: 199px; height: 100px; background: #C4D5DE; border-radius: 50px; position: relative; left: -70px; display: flex; justify-content: center; align-items: center;">
+           <!-- this is SELECT tool -->
+
+          <div class="Rectangle18" style="width: 50px; height: 39px; background: #C4D5DE"></div>
+            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#103140" d="M278.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l9.4-9.4V224H109.3l9.4-9.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-9.4-9.4H224V402.7l-9.4-9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l64 64c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-9.4 9.4V288H402.7l-9.4 9.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l9.4 9.4H288V109.3l9.4 9.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-64-64z"/>
+            </svg>
+        </button>
+      </a>
+     </div>
+  </section>
+</body>
+
+</html>
